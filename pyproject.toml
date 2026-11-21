@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vote-effective-sample-size"
+version = "0.1.0"
+description = "Agreement-discount audit for self-consistency voting: converts observed agreement into an effective number of independent votes (n_eff) under correlated error, and predicts the accuracy gain from additional samples before paying for them."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Amna Raheeba" }]
+
+[tool.setuptools]
+packages = ["vote_eff"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
